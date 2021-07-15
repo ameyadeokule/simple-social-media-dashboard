@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/css/main.css">
+
+  <title>Frontend Mentor | Social media dashboard theme switcher</title>
+</head>
+<body data-theme="dark">
+  <!-- Main container -->
+  <main class="main">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__info">
+        <h1 class="header__heading">Social Media Dashboard</h1>
+        <p class="header__subheading">Total Followers: 23,004</p>
+      </div>
+      <div class="header__toggle">
+        <p class="header__subheading">Dark Mode</p>
+        <button class="header__switch" aria-label="theme color switch" data-switch></button>
+      </div>
+    </header>
+
+    <!-- Overall -->
+    <div class="overall">
+      <article class="overall__card overall__card--fb" data-anim>
+        <div class="overall__card-social">
+          <img src="assets/img/icon-facebook.svg" alt="facebook icon">
+          <h2 class="overall__heading">@nathanf</h2>
+        </div>
+        <p class="overall__follower-count" data-counter="1987"><span>0</span></p>
+        <p class="overall__text">Followers</p>
+        <p class="overall__grow">12 Today</p>
+      </article>
+      <article class="overall__card overall__card--tt" data-anim>
+        <div class="overall__card-social">
+          <img src="assets/img/icon-twitter.svg" alt="twitter icon">
+          <h2 class="overall__heading">@nathanf</h2>
+        </div>
+        <p class="overall__follower-count" data-counter="1044"><span>0</span></p>
+        <p class="overall__text">Followers</p>
+        <p class="overall__grow">99 Today</p>
+      </article>
+      <article class="overall__card overall__card--inst" data-anim>
+        <div class="overall__card-social">
+          <img src="assets/img/icon-instagram.svg" alt="instagram icon">
+          <h2 class="overall__heading">@realnathanf</h2>
+        </div>
+        <p class="overall__follower-count" data-counter="11"><span>0</span>k</p>
+        <p class="overall__text">Followers</p>
+        <p class="overall__grow">1099 Today</p>
+      </article>
+      <article class="overall__card overall__card--yt" data-anim>
+        <div class="overall__card-social">
+          <img src="assets/img/icon-youtube.svg" alt="youtube icon">
+          <h2 class="overall__heading">Nathan F.</h2>
+        </div>
+        <p class="overall__follower-count" data-counter="8239"><span>0</span></p>
+        <p class="overall__text">Subscribers</p>
+        <p class="overall__grow overall__grow--down">144 Today</p>
+      </article>
+    </div>
+    <!-- Overview -->
+    <section class="overview">
+      <h2 class="overview__heading">Overview - Today</h2>
+      <div class="overview__wrapper">
+        <!-- Facebook statistics -->
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Page Views</h3>
+          <img src="assets/img/icon-facebook.svg" alt="facebook icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="87"><span>0</span></p>
+          <p class="overview__stats-grow">3%</p>
+        </article>
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Likes</h3>
+          <img src="assets/img/icon-facebook.svg" alt="facebook icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="52"><span>52</span></p>
+          <p class="overview__stats-grow overview__stats-grow--down">2%</p>
+        </article>
+        <!-- Instagram statistics -->
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Likes</h3>
+          <img src="assets/img/icon-instagram.svg" alt="instagram icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="5462"><span>0</span></p>
+          <p class="overview__stats-grow">2257%</p>
+        </article>
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Profile Views</h3>
+          <img src="assets/img/icon-instagram.svg" alt="instagram icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="52"><span>0</span>k</p>
+          <p class="overview__stats-grow">1375%</p>
+        </article>
+        <!-- Twitter statistics -->
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Retweets</h3>
+          <img src="assets/img/icon-twitter.svg" alt="twitter icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="117"><span>0</span></p>
+          <p class="overview__stats-grow">303%</p>
+        </article>
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Likes</h3>
+          <img src="assets/img/icon-twitter.svg" alt="twitter icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="507"><span>0</span></p>
+          <p class="overview__stats-grow">553%</p>
+        </article>
+        <!-- Youtube statistics -->
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Likes</h3>
+          <img src="assets/img/icon-youtube.svg" alt="youtube icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="107"><span>0</span></p>
+          <p class="overview__stats-grow overview__stats-grow--down">19%</p>
+        </article>
+        <article class="overview__stats" data-anim>
+          <h3 class="overview__stats-type">Total Views</h3>
+          <img src="assets/img/icon-youtube.svg" alt="youtube icon" class="overview__stats-socials">
+          <p class="overview__stats-counter" data-counter="1407"><span>0</span></p>
+          <p class="overview__stats-grow overview__stats-grow--down">12%</p>
+        </article>
+      </div>
+    </section>
+    
+  
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

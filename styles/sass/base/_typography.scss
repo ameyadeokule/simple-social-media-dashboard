@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Global styles */
+html {
+    font-size: 14px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: $c-bg;
+    font-family: 'Inter', sans-serif;
+    transition: background 700ms ease-in;
+    
+    &::before {
+        position: absolute;
+        content: '';
+        background: $c-bg-top;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 233px;
+        border-radius: 0 0 10px 10px;
+        transition: background 700ms ease-in;
+    }
+}
